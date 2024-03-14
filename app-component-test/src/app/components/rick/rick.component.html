@@ -1,0 +1,24 @@
+<h1 class="titulo">Personajes de Rick and Morty</h1>
+
+<table class="styled-table">
+  <thead>
+  <tr>
+    <th>Nombre</th>
+    <th>Status</th>
+    <th>Species</th>
+    <th>Gender</th>
+    <th>Origin</th>
+    <th>Location</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of character; let i = index">
+    <td> {{item.name }}</td>
+    <td> {{item.status }}</td>
+    <td> {{item.species }}</td>
+    <td> {{item.gender }}</td>
+    <td> {{item.origin.name }}</td>
+    <td> {{item.location.name }}</td>
+  </tr>
+  </tbody>
+</table>
